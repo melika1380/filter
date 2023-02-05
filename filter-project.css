@@ -1,0 +1,251 @@
+* {
+  font-family: "Kaushan Script", cursive;
+}
+header {
+  background: linear-gradient(
+      rgba(247, 206, 145, 0.562),
+      rgba(252, 198, 117, 0.63)
+    ),
+    url("img/headerBcg.jpeg") center/cover fixed no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.header {
+  background: white!important;
+  height: 5rem;
+  text-transform: capitalize;
+}
+.header-nav {
+  justify-content: space-between;
+}r
+.headr-call {
+  padding-top: 1.8rem;
+ }
+.header-shop {
+  margin-top: 0.7rem;
+ }
+.header-shop a {
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+.header-shop a:hover {
+  background-color: palevioletred;
+  color: white;
+  border-color: palevioletred;
+}
+.accordion img{
+  width: 1.9rem;
+  color: palevioletred;
+}
+.accordion{
+  border: 0;
+  background-color: transparent;
+}
+.menue {
+  color: palevioletred;
+  margin-left: 10rem;
+}
+.second-menue{
+  display:none;
+  padding: 0rem;
+  list-style-type: none;
+}
+.second-menue-show{
+  display: block;
+}
+.second-menue li a{
+  text-decoration: none;
+  color: palevioletred;
+}
+.second-menue li{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding:1rem 2.5rem;
+  margin: -1.2rem 0rem;
+}
+.menue a:hover{
+  color: #000;
+  transition: color 1s;
+}
+.header-donat {
+  margin: 1rem 2.4rem;
+}
+.header-inform {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  .hidden-inform {
+    display: none;
+  }
+  .menue-button {
+    display: block;
+    margin: 2rem;
+  }
+  .hidden-li {
+    display: none;
+  }
+  .header-shop{
+    display: none;
+  }
+  .headr-call{
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .menue-button {
+    display: none;
+  }
+}
+.menue li {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  list-style-type: none;
+  display: inline-block;
+}
+.menue a {
+  color: palevioletred;
+  text-decoration: none;
+}
+.pargraph a,
+.header-shop a {
+  text-decoration: none;
+  color: #000;
+}
+
+.welcome {
+  display: flex;
+  height: 36rem;
+  justify-content: center;
+  align-items: center;
+}
+.welcome div {
+  margin: 0 auto;
+}
+.welcome h1 {
+  font-family: inherit;
+  text-transform: capitalize;
+  color: palevioletred;
+}
+.pargraph {
+  display: flex;
+  justify-content: center;
+}
+.pargraph p {
+  font-size: 2rem;
+  text-align: center;
+  width: 12rem;
+  border: 4px solid #000;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  padding: 1rem;
+}
+.pargraph p:hover,.btn-defult:hover{
+  background-color: #000;
+  color: palevioletred;
+}
+.btn-defult a:hover{
+  color: palevioletred;
+  background-color: #000;
+}
+.about{
+  margin: 3rem;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.about-img img{
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  position: absolute;
+  padding: 9.5px;
+}
+.about-img{
+  margin: 3rem 0;
+  height: 20rem;
+  width: 25rem;
+}
+.about-img::before{
+  content: "";
+  border: 10px solid rgba(248, 196, 100, 0.581);
+  position:absolute;
+  height: inherit;
+  width: inherit;
+  transition:all 3s;
+}
+.about-img:hover::before{
+  transform: translate(-20px,-20px);
+}
+.about-head p{
+  width: 60%;
+  margin: 2rem 0;
+}
+.btn-defult{
+  padding:0.3rem 0.5rem;
+  border-radius: 0.2rem;
+  text-transform:uppercase;
+  font-size: 1rem;
+}
+.ourstore{
+  text-align: center;
+  background: rgb(236, 236, 236);
+}
+.ourstore h1{
+  padding-top: 3rem;
+}
+.ourstore-ul li{
+  display: inline-block;
+  margin: 3rem 1rem;
+}
+.pink-color{
+  color: palevioletred;
+}
+.about-head a{
+  text-decoration: none;
+  color: #000;
+}
+.about-head h1{
+  color: palevioletred;
+}
+.about-head p{
+  color: rgb(122, 122, 121);
+  width: 100%;
+}
+.search{
+  display: flex;
+  justify-content: center;
+}
+.search-btn{
+  background-color:palevioletred;
+  margin: 1rem;
+  border-radius:0.2rem 0 0 0.2rem;
+}
+.search-btn img{
+  padding: 0.5rem;
+  font-weight: bolder;
+}
+.search-input{
+  margin:0;
+  padding: 0.3rem;
+}
+#store-item{
+  margin: 1rem 10rem;
+}
+.store-img{
+  transition: all 1s ease-in-out;
+}
+.store-img:hover{
+  transition: all 1s ease-in-out;
+}
+.store-img:hover{
+}
+.hidden{
+  display: none;
+}
+.show{
+  display: flex;
+}

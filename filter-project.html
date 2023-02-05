@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="filter-project.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="all.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header bg-white">
+            <div class="header-nav d-flex">
+                <div class="headr-menue">
+                    <a class="header-donat d-inline-block" href="#"><img src="img/logo.svg"></a>
+                    <span class="hidden-li">
+                        <ul class="menue d-inline-block">
+                            <li class="list-li"><a href="#">home</a></li>
+                            <li class="list-li"><a href="#">about</a></li>
+                            <li class="list-li"><a href="#">store</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="header-inform">
+                    <div class="headr-call me-5"><i></i>+123 564 765</div>
+                    <div class="header-shop p-3 me-5"><a href="#"><i></i>2 Items-$10.49</a></div>
+                </div>
+                <div class="menue-button">
+                    <button class="accordion toggler-icon"><i><img src="img/list.svg"></i></button>
+                </div>
+            </div>
+            <ul class="second-menue">
+                <li class=""><a href="#">home</a></li>
+                <li class=""><a href="#">about</a></li>
+                <li class=""><a href="#">store</a></li>
+            </ul>
+        </div>
+        <section class="welcome">
+            <div>
+                <h1><span class="text-white">welcome</span> to grand'mas</h1>
+                <div class="pargraph">
+                    <a href="#">
+                        <p>exolore</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="h-25">
+
+        </section>
+    </header>
+    <main>
+        <section class="section-about">
+            <div class="d-sm-flex about d-block">
+                <div class="about-head col-sm-6 p-sm-3">
+                    <h1 class=" text-capitalize"><span class="text-dark">about</span> us</h1>
+                    <p class="w-100">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis porro at dolorum! Ad!
+                    </p>
+                    <button class="btn-defult"><a href="#">explore</a></button>
+                </div>
+                <div class="about-img col-sm-4">
+                    <img class="image" src="img/sweets.jpeg">
+                </div>
+            </div>
+        </section>
+        <section class="ourstore">
+            <div class="">
+                <h1>our <span class="pink-color">store</span></h1>
+                <ul class="ourstore-ul">
+                    <li><button class="btn-defult"  onclick="sweetClick()">all</button></li>
+                    <li><button class="btn-defult" onclick="sweetClick('cakes')">cake</button></li>
+                    <li><button class="btn-defult"  onclick="sweetClick('cupcakes')">cupcake</button></li>
+                    <li><button class="btn-defult" onclick="sweetClick('sweet')">sweets</button></li>
+                    <li><button class="btn-defult"  onclick="sweetClick('doughnuts')">doughnuts</button></li>
+                </ul>
+            </div>
+            <div class="search">
+                <span class="m-0 p-0 search-btn"><a><img src="img/search.svg"></a></span>
+                <input class="m-0 p-0 search-input" onkeyup="searchType(event)" type="search" id="gsearch" name="gsearch" placeholder="item...">
+            </div>
+            <div>
+                <div class="row" id="store-item">
+                    <div id="sweet1" class="col-10 col-sm-6 col-lg-4 mx-auto  my-3 store-item sweet  hidden">
+                        <div class="card">
+                            <div class="img-container"><img class="card-img-top store-img" src="img/sweets.jpeg"></div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 class="store-item-name">
+                                        sweet item
+                                    </h5>
+                                    <h5 class="store-item-value">
+                                        $
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cupcake1" class="col-10 col-sm-6 col-lg-4 mx-auto  my-3 store-item cupcakes hidden">
+                        <div class="card">
+                            <div class="img-container"><img class="card-img-top store-img" src="img/cupcake-1.jpeg"></div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 class="store-item-name">
+                                        cupcake item
+                                    </h5>
+                                    <h5 class="store-item-value">
+                                        $
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cake1" class="col-10 col-sm-6 col-lg-4 mx-auto  my-3 store-item cakes hidden">
+                        <div class="card">
+                            <div class="img-container"><img class="card-img-top store-img" src="img/cake-1.jpeg"></div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 class="store-item-name">
+                                        cake item
+                                    </h5>
+                                    <h5 class="store-item-value">
+                                        $
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="doughnuts1" class="col-10 col-sm-6 col-lg-4 mx-auto  my-3 store-item doughnuts hidden">
+                        <div class="card">
+                            <div class="img-container"><img class="card-img-top store-img" src="img/doughnut-1.jpeg"></div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 class="store-item-name">
+                                        doughnut item
+                                    </h5>
+                                    <h5 class="store-item-value">
+                                        $
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sweet2" class="col-10 col-sm-6 col-lg-4 mx-auto  my-3 store-item sweet hidden">
+                        <div class="card">
+                            <div class="img-container"><img class="card-img-top store-img"  src="img/sweets-2.jpeg"></div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 class="store-item-name">
+                                        sweet item
+                                    </h5>
+                                    <h5 class="store-item-value">
+                                        $
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cupcake2" class="col-10 col-sm-6 col-lg-4 mx-auto  my-3 store-item cupcakes hidden">
+                        <div class="card">
+                            <div class="img-container"><img class="card-img-top store-img" src="img/cupcake-2.jpeg"></div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 class="store-item-name">
+                                        cupcake item
+                                    </h5>
+                                    <h5 class="store-item-value">
+                                        $
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cake2" class="col-10 col-sm-6 col-lg-4 mx-auto  my-3 store-item cakes hidden">
+                        <div class="card">
+                            <div class="img-container"><img class="card-img-top store-img" src="img/cake-2.jpeg"></div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 class="store-item-name">
+                                        sweet item
+                                    </h5>
+                                    <h5 class="store-item-value">
+                                        $
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="doughnuts2" class="col-10 col-sm-6 col-lg-4 mx-auto  my-3 store-item doughnuts hidden">
+                        <div class="card">
+                            <div class="img-container"><img class="card-img-top store-img" src="img/doughnut-2.jpeg"></div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 class="store-item-name">
+                                        sweet item
+                                    </h5>
+                                    <h5 class="store-item-value">
+                                        $
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sweet3" class="col-10 col-sm-6 col-lg-4 mx-auto  my-3 store-item sweet hidden">
+                        <div class="card">
+                            <div class="img-container"><img class="card-img-top store-img" src="img/sweets-3.jpeg"></div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 class="store-item-name">
+                                        sweet item
+                                    </h5>
+                                    <h5 class="store-item-value">
+                                        $
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cupcake3" class="col-10 col-sm-6 col-lg-4 mx-auto  my-3 store-item cupcakes hidden">
+                        <div class="card">
+                            <div class="img-container"><img class="card-img-top store-img" src="img/cupcake-3.jpeg"></div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 class="store-item-name">
+                                        sweet item
+                                    </h5>
+                                    <h5 class="store-item-value">
+                                        $
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cake3" class="col-10 col-sm-6 col-lg-4 mx-auto  my-3 store-item cakes hidden">
+                        <div class="card">
+                            <div class="img-container"><img class="card-img-top store-img" src="img/cake-3.jpeg"></div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 class="store-item-name">
+                                        sweet item
+                                    </h5>
+                                    <h5 class="store-item-value">
+                                        $
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="doughnuts3" class="col-10 col-sm-6 col-lg-4 mx-auto  my-3 store-item doughnuts hidden">
+                        <div class="card">
+                            <div class="img-container"><img class="card-img-top store-img" src="img/doughnut-3.jpeg"></div>
+                            <div class="card-body">
+                                <div class="card-text d-flex justify-content-between text-capitalize">
+                                    <h5 class="store-item-name">
+                                        sweet item
+                                    </h5>
+                                    <h5 class="store-item-value">
+                                        $
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script  src="filter-project.js"></script>
+    </main>
+</body>
+</html>

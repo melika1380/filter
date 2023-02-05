@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family:myfirstfont;
+    src: url(../font/kaushan-script/src/KaushanScript-Regular.otf);
+   
+  }
+  @font-face {
+    font-family: mysecondfont;
+    src: url(../font/Montserrat/Montserrat-VariableFont_wght.ttf);
+  }
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}  
+header{
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-image:linear-gradient(rgba(236, 129, 126, 0.925),rgba(214, 123, 81, 0.91),rgba(241, 203, 76, 0.91)),
+    url("../mogo2/images/back.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.logo{
+    padding: 20px;
+    margin-left: 250px;
+    font-size: larger;
+    margin-bottom: -40px;
+}
+.navigation ul{
+    text-align: right;
+    margin-right: 180px;
+}
+.navigation ul li{
+    font-family:mysecondfont;
+    font-weight: lighter!important;
+    display: inline-block;
+    margin-right: 35px;
+    margin-bottom: 40px
+}
+.navigation li a{
+    color: white;
+    text-decoration: none;
+}
+.top-header{
+    text-align: center;
+    margin: 100px auto;
+}
